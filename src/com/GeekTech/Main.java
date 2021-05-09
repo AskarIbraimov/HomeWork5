@@ -11,6 +11,11 @@ public class Main {
 
         System.out.println("Здоровье Босса " + shaoKahn.getBossHealth() + " Урон Босса " + shaoKahn.getBossDamage()
                 + " Тип Защиты Босса:" + shaoKahn.getBossTypeDefence());
+         createHeroes();
+        for (Hero name:createHeroes()) {
+            System.out.println(name.getHealth() + " " + name.getDamage() + " " + name.getUltimate());
+
+        }
 
     }
 
@@ -25,5 +30,8 @@ public class Main {
 
 
     }
+
+
+
 }
 
